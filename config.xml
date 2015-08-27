@@ -19,7 +19,9 @@
     </feature>
 
 	<gap:platform name="ios" />
-		<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
-
+	<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+	<feature name="Device">
+		<param name="ios-package" value="CDVDevice" />
+	</feature>
 
 </widget>
