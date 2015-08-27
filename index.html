@@ -14,11 +14,11 @@
       document.addEventListener("deviceready", onDeviceReady, true);
     }
       function onDeviceReady() {
-          document.write("is ready");
+          document.write("<br>Is ready");
           try{
          document.write(device.cordova);
           }catch(e){
-            document.write("error");
+            document.write("<br>Error: "+e.message);
           }
       }
 
