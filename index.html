@@ -12,7 +12,12 @@
       document.addEventListener("deviceready", onDeviceReady, true);
     }
       function onDeviceReady() {
+          document.write("is ready");
+          try{
          document.write(device.cordova);
+          }catch(e){
+            document.write("error");
+          }
       }
 
     // device APIs are available
