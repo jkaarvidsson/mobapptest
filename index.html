@@ -9,14 +9,11 @@
     //
     function onLoad() {
         //document.addEventListener("deviceready", onDeviceReady, false);
-      document.addEventListener("deviceready", function(){
-    		try{	
-    			alert(device.model);
-    		}catch(e){
-    			document.write(e);
-    		}
-    	},true);
+      document.addEventListener("deviceready", onDeviceReady, false);
     }
+      function onDeviceReady() {
+          console.log(device.cordova);
+      }
 
     // device APIs are available
     //
@@ -33,6 +30,6 @@
     </script>
   </head>
   <body onload="onLoad()">
-    <p id="deviceProperties">Loading device properties (again)...</p>
+    <p id="deviceProperties">Loading device properties (and again)...</p>
   </body>
 </html>
