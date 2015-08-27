@@ -13,7 +13,8 @@
     <author href="http://macedo.ca" email="info@macedo.ca">
         Macedo team
     </author>
-
+	<content src="index.html" />
+	<access origin="*" />
       <feature name="Device">
         <param name="ios-package" value="CDVDevice" />
     </feature>
